@@ -1,4 +1,4 @@
-import resources from "../../data/resources.json";
+import resources from "../data/resources.json";
 
 export async function getStaticPaths() {
   const paths = resources.map((resource) => ({
