@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { Header, Footer, MainContent } from "../components/index";
 import resources from "../data/resources.json"; // Import your JSON data
 
-function Resource_Page() {
+function ResourcePage() {
   const { slug } = useParams(); // Get the slug from the URL
   const resource = resources.find((res) => res.slug === slug); // Find the resource based on the slug
 
@@ -31,4 +31,4 @@ function Resource_Page() {
   );
 }
 
-export default Resource_Page;
+export default ResourcePage;
