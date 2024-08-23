@@ -1,14 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Header, Footer, MainContent } from "../components/index";
-import resources from "../data/resources.json"; // Import your JSON data
 
 function ResourcePage() {
-  const { slug } = useParams(); // Get the slug from the URL
-  const resource = resources.find((res) => res.slug === slug); // Find the resource based on the slug
+  const { slug } = useParams();
+  const [resource, setResource] = useState(null);
+
+  useEffect(() => {
+    fetch("/data/resources.json")
+      .then((response) => response.json())
+      .then((data) => {
+        const foundResource = data.find((res) => res.slug === slug);
+        setResource(foundResource);
+      });
+  }, [slug]);
 
   if (!resource) {
-    return <p className="text-white">Resource not found</p>; // Handle case where resource is not found
+    return <p className="text-white min-h-screen flex items-center justify-center">Loading...</p>;
   }
 
   return (
@@ -16,7 +24,6 @@ function ResourcePage() {
       <Header />
       <div className="mt-6 w-full border border-solid border-white border-opacity-60 min-h-[1px]" />
 
-      {/* Pass resource data to MainContent or display it directly */}
       <MainContent resource={resource} />
 
       <h2 className="mt-16 font-bold leading-loose text-center text-[300px] text-zinc-500 tracking-[21px] max-md:mt-10 max-md:max-w-full max-md:text-4xl">
