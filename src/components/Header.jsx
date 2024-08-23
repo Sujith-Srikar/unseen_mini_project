@@ -18,9 +18,6 @@ const Header = () => {
         UNSEEN
       </button>
       <nav className="flex gap-9 my-auto font-bold">
-        <a href="#about" className="grow text-3xl leading-tight text-white">
-          About
-        </a>
         <a
           href="https://forms.gle/aoovJD42E3KNEj1s7"
           target="_blank"
