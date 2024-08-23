@@ -49,6 +49,7 @@ const Footer = () => {
           <div className="flex flex-col self-stretch my-auto w-full text-2xl text-center text-white max-md:mt-10">
             <a
               href="https://forms.gle/aoovJD42E3KNEj1s7"
+              target="_blank"
               class="flex items-center space-x-2 text-white hover:underline mb-10"
             >
               <span>Add a Resource</span>
@@ -67,14 +68,15 @@ const Footer = () => {
             </a>
 
             <a
-              href="#"
+              href="https://github.com/Sujith-Srikar/unseen_mini_project"
+              target="_blank"
               class="flex items-center space-x-2 text-white hover:underline"
             >
               <span>Contribute on Github</span>
               <svg
                 width="24"
                 height="24"
-                xmlns="https://github.com/Sujith-Srikar/unseen_mini_project"
+                xmlns="http://www.w3.org/2000/svg"
                 fill-rule="evenodd"
                 clip-rule="evenodd"
               >
