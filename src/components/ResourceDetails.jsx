@@ -1,6 +1,6 @@
 import React from "react";
 
-const ResourceDetails = ({ title, description, category, tags }) => {
+const ResourceDetails = ({ title, description, category, tags, visitlink }) => {
   return (
     <article className="flex flex-col self-stretch my-auto w-full text-center max-md:mt-10 max-md:max-w-full">
       <div className="flex flex-col max-w-full w-[502px]">
@@ -12,7 +12,8 @@ const ResourceDetails = ({ title, description, category, tags }) => {
         </p>
       </div>
       <a
-        href="#"
+        href={visitlink}
+        target="_blank"
         className="self-start px-6 py-2 mt-14 text-2xl font-bold leading-snug text-black rounded-2xl bg-zinc-100 max-md:px-5 max-md:mt-10"
       >
         Visit Source
