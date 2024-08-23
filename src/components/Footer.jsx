@@ -48,7 +48,7 @@ const Footer = () => {
         <div className="flex flex-col ml-5 w-[37%] max-md:ml-0 max-md:w-full">
           <div className="flex flex-col self-stretch my-auto w-full text-2xl text-center text-white max-md:mt-10">
             <a
-              href="#"
+              href="https://forms.gle/aoovJD42E3KNEj1s7"
               class="flex items-center space-x-2 text-white hover:underline mb-10"
             >
               <span>Add a Resource</span>
@@ -74,7 +74,7 @@ const Footer = () => {
               <svg
                 width="24"
                 height="24"
-                xmlns="http://www.w3.org/2000/svg"
+                xmlns="https://github.com/Sujith-Srikar/unseen_mini_project"
                 fill-rule="evenodd"
                 clip-rule="evenodd"
               >

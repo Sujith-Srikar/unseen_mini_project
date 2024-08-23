@@ -2,24 +2,16 @@ import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import ResourceContext from "../context/ResourceContext";
 
-const Card = ({ name, tags, image, alt }) => {
+const Card = ({ name, tags, image, alt, slug }) => {
   const navigate = useNavigate();
-  const { resource, setResource } = useContext(ResourceContext);
+  const { setResource } = useContext(ResourceContext);
 
   const handleGoClick = () => {
-    console.log("Current resource context before setting:", resource);
-
-    // Log the resource data being set
-    console.log("Setting resource:", { name, tags, image, alt });
-
-    // Set the resource
+    // Set the resource in context
     setResource({ name, tags, image, alt });
 
-    // Log current state after setting
-    console.log("Current resource context after setting:", resource);
-
-    // Navigate to the resource page
-    navigate("/resource-page");
+    // Navigate to the resource page with the slug
+    navigate(`/resource/${slug}`);
   };
 
   return (
@@ -31,9 +23,15 @@ const Card = ({ name, tags, image, alt }) => {
         <h2 className="card-title text-lg">{name}</h2>
         <p className="text-sm text-gray-600">{tags}</p>
         <div className="card-actions justify-end">
-          <button className="btn btn-primary btn-sm" onClick={handleGoClick}>
+          {/* <button className="btn btn-primary btn-sm" onClick={handleGoClick}>
             Go
-          </button>
+          </button> */}
+          <a target="_blank"
+            href={`/resource/${slug}`}
+            className="btn btn-primary btn-sm"
+          >
+            Go
+          </a>
         </div>
       </div>
     </div>

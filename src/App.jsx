@@ -1,7 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { Resource_Page, HomePage } from "./pages/index.js";
+import { HomePage, Resource_Page } from "./pages/index.js"; // Import your pages
 import ResourceProvider from "./context/ResourceProvider.jsx";
+
 
 function App() {
   return (
@@ -9,7 +10,8 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/resource-page" element={<Resource_Page />} />
+          <Route path="/resource/:slug" element={<Resource_Page />} />{" "}
+          {/* Dynamic routing for resources */}
         </Routes>
       </Router>
     </ResourceProvider>

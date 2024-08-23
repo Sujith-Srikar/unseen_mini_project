@@ -1,0 +1,68 @@
+[
+  {
+    "id": "1",
+    "name": "Aceternity-UI",
+    "slug": "aceternity-ui",
+    "tags": "Web, Animation",
+    "image": "/assests/aceternity-ui.jpg",
+    "alt": "Aceternity-ui",
+    "category": "Web Development",
+    "description": "Aceternity-UI offers sleek, animated web design with dynamic visuals, perfect for creating engaging, modern web applications with ease.",
+    "link": "https://ui.aceternity.com/"
+  },
+  {
+    "id": "2",
+    "name": "Awwwards",
+    "slug": "awwwards",
+    "tags": "Frontend, UI/UX",
+    "image": "/assests/awwwards.jpg",
+    "alt": "Awwwards",
+    "category": "UI/UX Design",
+    "description": "Awwwards is a platform that showcases the best web designs and digital creations, providing inspiration and resources for UI/UX designers.",
+    "link": "https://www.awwwards.com/"
+  },
+  {
+    "id": "3",
+    "name": "DSA Patterns",
+    "slug": "dsa-patterns",
+    "tags": "DSA, Articles",
+    "image": "/assests/DSA-Patterns.jpg",
+    "alt": "DSA Patterns",
+    "category": "DSA",
+    "description": "DSA Patterns provides comprehensive articles on data structures and algorithms, offering insights and strategies to ace coding interviews.",
+    "link": "https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed"
+  },
+  {
+    "id": "4",
+    "name": "Blender",
+    "slug": "blender",
+    "tags": "Tools, Animation",
+    "image": "/assests/Blender.jpg",
+    "alt": "Blender",
+    "category": "3D Animation",
+    "description": "Blender is a powerful open-source 3D creation suite, used for creating animations, visual effects, and interactive 3D applications.",
+    "link": "https://www.blender.org/"
+  },
+  {
+    "id": "5",
+    "name": "Uncutwtf",
+    "slug": "uncutwtf",
+    "tags": "Typography",
+    "image": "/assests/uncutwtf.jpg",
+    "alt": "Uncutwtf",
+    "category": "Typography",
+    "description": "Uncutwtf offers a unique collection of experimental typography and typefaces, ideal for designers seeking creative inspiration.",
+    "link": "https://www.uncut.wtf/"
+  },
+  {
+    "id": "6",
+    "name": "Framer Motion",
+    "slug": "framer-motion",
+    "tags": "Technologies",
+    "image": "/assests/framermotion.jpg",
+    "alt": "Framer Motion",
+    "category": "Animation Library",
+    "description": "Framer Motion is a popular library for React that allows developers to create smooth and complex animations with ease.",
+    "link": "https://www.framer.com/motion/"
+  }
+]

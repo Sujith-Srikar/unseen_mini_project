@@ -1,14 +1,20 @@
 import React from "react";
 import Card from "./Card";
-import resources from "../data/resource";
+import resources from "../data/resources.json"; // Import the JSON file
 
 const ResourceGrid = () => {
-
   return (
     <div>
       <section className="flex flex-wrap justify-center gap-8 items-center mt-44 max-md:mt-10">
         {resources.map((resource, index) => (
-          <Card key={index} name={resource.name} tags={resource.tags} image={resource.image} alt={resource.alt} />
+          <Card
+            key={index}
+            name={resource.name}
+            tags={resource.tags}
+            image={resource.image}
+            alt={resource.alt}
+            slug={resource.slug}
+          />
         ))}
       </section>
 
