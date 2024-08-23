@@ -10,7 +10,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/resource/:slug" element={<Resource_Page />} />{" "}
+          <Route path="/:slug" element={<Resource_Page />} />{" "}
           {/* Dynamic routing for resources */}
         </Routes>
       </Router>

@@ -11,7 +11,7 @@ const Card = ({ name, tags, image, alt, slug }) => {
     setResource({ name, tags, image, alt });
 
     // Navigate to the resource page with the slug
-    navigate(`/resource/${slug}`);
+    navigate(`/${slug}`);
   };
 
   return (
@@ -27,7 +27,7 @@ const Card = ({ name, tags, image, alt, slug }) => {
             Go
           </button> */}
           <a target="_blank"
-            href={`/resource/${slug}`}
+            href={`/${slug}`}
             className="btn btn-primary btn-sm"
           >
             Go
