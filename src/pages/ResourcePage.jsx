@@ -20,7 +20,7 @@ function ResourcePage() {
   }
 
   return (
-    <div className="flex overflow-hidden flex-col items-center px-20 py-16 bg-neutral-900 max-md:px-5">
+    <div className="flex overflow-hidden flex-col items-center px-20 py-16 bg-[#] max-md:px-5">
       <Header />
       <div className="mt-6 w-full border border-solid border-white border-opacity-60 min-h-[1px]" />
 

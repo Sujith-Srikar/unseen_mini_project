@@ -16,8 +16,14 @@ const Card = ({ name, tags, image, alt, slug }) => {
 
   return (
     <div className="card bg-base-100 w-96 h-[45vh] shadow-xl">
-      <figure className="h-41 overflow-hidden">
-        <img src={image} alt={alt} className="w-full h-full object-cover" />
+      <figure className="h-41 ">
+        <a target="_blank" href={`/${slug}`}>
+          <img
+            src={image}
+            alt={alt}
+            className="w-full h-full object-cover rounded-t-lg "
+          />
+        </a>
       </figure>
       <div className="card-body p-4">
         <h2 className="card-title text-lg">{name}</h2>
@@ -26,7 +32,8 @@ const Card = ({ name, tags, image, alt, slug }) => {
           {/* <button className="btn btn-primary btn-sm" onClick={handleGoClick}>
             Go
           </button> */}
-          <a target="_blank"
+          <a
+            target="_blank"
             href={`/${slug}`}
             className="btn btn-primary btn-sm"
           >
